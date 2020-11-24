@@ -20,7 +20,7 @@ public class ImageMapper {
         BufferedImage image = new BufferedImage(width, height, ColorSpace.TYPE_RGB);
         Graphics2D graphics = image.createGraphics();
         graphics.setPaint ( new Color ( 255, 255, 255 ) );
-        for(int i = 0; i < points.size()-2; i++)
+        for(int i = 0; i < points.size()-1; i++)
         {
             String[] coordinates = points.get(i).split(" ");
             graphics.fillRect(Integer.parseInt(coordinates[1]) ,height-Integer.parseInt(coordinates[0]), 1, 1);
